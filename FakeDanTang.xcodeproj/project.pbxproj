@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73EEDEB6EE05E941C5DB9590 /* Pods_FakeDanTang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A82F702A49AD65DB7A50A09B /* Pods_FakeDanTang.framework */; };
+		B5F3C8531E08D106004B98EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8521E08D106004B98EC /* AppDelegate.swift */; };
+		B5F3C8551E08D106004B98EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8541E08D106004B98EC /* ViewController.swift */; };
+		B5F3C85A1E08D106004B98EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F3C8591E08D106004B98EC /* Assets.xcassets */; };
+		B5F3C85D1E08D106004B98EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F3C85B1E08D106004B98EC /* LaunchScreen.storyboard */; };
+		B5F3C86F1E08D6BA004B98EC /* ALHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5F3C86E1E08D6BA004B98EC /* ALHomeCell.xib */; };
+		B5F3C8711E08D700004B98EC /* ALHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8701E08D700004B98EC /* ALHomeCell.swift */; };
+		B5F3C8731E08D923004B98EC /* ALTitlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8721E08D923004B98EC /* ALTitlesView.swift */; };
+		B5F3C8791E08DF6C004B98EC /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8781E08DF6C004B98EC /* String+Extension.swift */; };
+		B5F3C87B1E08E1B1004B98EC /* ALConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C87A1E08E1B1004B98EC /* ALConst.swift */; };
+		B5F3C87D1E08E56F004B98EC /* ALTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C87C1E08E56F004B98EC /* ALTabBarController.swift */; };
+		B5F3C87F1E08F79A004B98EC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C87E1E08F79A004B98EC /* UIView+Extension.swift */; };
+		B5F3C8811E08FAC6004B98EC /* ALTopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8801E08FAC6004B98EC /* ALTopicViewController.swift */; };
+		B5F3C8831E08FAF8004B98EC /* ALBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8821E08FAF8004B98EC /* ALBaseViewController.swift */; };
+		B5F3C8851E08FD0E004B98EC /* ALDanTangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8841E08FD0E004B98EC /* ALDanTangViewController.swift */; };
+		B5F3C8871E08FDA0004B98EC /* ALChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8861E08FDA0004B98EC /* ALChannel.swift */; };
+		B5F3C8891E08FDAD004B98EC /* ALHomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8881E08FDAD004B98EC /* ALHomeItem.swift */; };
+		B5F3C88B1E09056E004B98EC /* ALNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C88A1E09056E004B98EC /* ALNetworkTool.swift */; };
+		B5F3C88D1E09213B004B98EC /* ALNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C88C1E09213B004B98EC /* ALNavigationController.swift */; };
+		B5F3C8931E0923D9004B98EC /* ALProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8921E0923D9004B98EC /* ALProductViewController.swift */; };
+		B5F3C8991E092584004B98EC /* ALMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8981E092584004B98EC /* ALMeViewController.swift */; };
+		B5F3C89F1E09266A004B98EC /* ALCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C89E1E09266A004B98EC /* ALCategoryViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4D4F2621BF536427E37E5348 /* Pods-FakeDanTang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeDanTang.release.xcconfig"; path = "Pods/Target Support Files/Pods-FakeDanTang/Pods-FakeDanTang.release.xcconfig"; sourceTree = "<group>"; };
+		7FD7D57B1D9FADBF5702306C /* Pods-FakeDanTang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeDanTang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FakeDanTang/Pods-FakeDanTang.debug.xcconfig"; sourceTree = "<group>"; };
+		A82F702A49AD65DB7A50A09B /* Pods_FakeDanTang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FakeDanTang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5F3C84F1E08D106004B98EC /* FakeDanTang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeDanTang.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5F3C8521E08D106004B98EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5F3C8541E08D106004B98EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5F3C8591E08D106004B98EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5F3C85C1E08D106004B98EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5F3C85E1E08D106004B98EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F3C86E1E08D6BA004B98EC /* ALHomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALHomeCell.xib; sourceTree = "<group>"; };
+		B5F3C8701E08D700004B98EC /* ALHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALHomeCell.swift; sourceTree = "<group>"; };
+		B5F3C8721E08D923004B98EC /* ALTitlesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTitlesView.swift; sourceTree = "<group>"; };
+		B5F3C8781E08DF6C004B98EC /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		B5F3C87A1E08E1B1004B98EC /* ALConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALConst.swift; sourceTree = "<group>"; };
+		B5F3C87C1E08E56F004B98EC /* ALTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTabBarController.swift; sourceTree = "<group>"; };
+		B5F3C87E1E08F79A004B98EC /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B5F3C8801E08FAC6004B98EC /* ALTopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTopicViewController.swift; sourceTree = "<group>"; };
+		B5F3C8821E08FAF8004B98EC /* ALBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALBaseViewController.swift; sourceTree = "<group>"; };
+		B5F3C8841E08FD0E004B98EC /* ALDanTangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALDanTangViewController.swift; sourceTree = "<group>"; };
+		B5F3C8861E08FDA0004B98EC /* ALChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALChannel.swift; sourceTree = "<group>"; };
+		B5F3C8881E08FDAD004B98EC /* ALHomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALHomeItem.swift; sourceTree = "<group>"; };
+		B5F3C88A1E09056E004B98EC /* ALNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALNetworkTool.swift; sourceTree = "<group>"; };
+		B5F3C88C1E09213B004B98EC /* ALNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALNavigationController.swift; sourceTree = "<group>"; };
+		B5F3C8921E0923D9004B98EC /* ALProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALProductViewController.swift; sourceTree = "<group>"; };
+		B5F3C8981E092584004B98EC /* ALMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALMeViewController.swift; sourceTree = "<group>"; };
+		B5F3C89E1E09266A004B98EC /* ALCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALCategoryViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5F3C84C1E08D106004B98EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73EEDEB6EE05E941C5DB9590 /* Pods_FakeDanTang.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D06EEB625A220C29B124220 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A82F702A49AD65DB7A50A09B /* Pods_FakeDanTang.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5F3C8461E08D106004B98EC = {
+			isa = PBXGroup;
+			children = (
+				B5F3C8511E08D106004B98EC /* FakeDanTang */,
+				B5F3C8501E08D106004B98EC /* Products */,
+				CAA86C3BEAC2DF8DB30E5E08 /* Pods */,
+				4D06EEB625A220C29B124220 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B5F3C8501E08D106004B98EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3C84F1E08D106004B98EC /* FakeDanTang.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5F3C8511E08D106004B98EC /* FakeDanTang */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3C8691E08D689004B98EC /* Classes */,
+				B5F3C8521E08D106004B98EC /* AppDelegate.swift */,
+				B5F3C8541E08D106004B98EC /* ViewController.swift */,
+				B5F3C8591E08D106004B98EC /* Assets.xcassets */,
+				B5F3C85B1E08D106004B98EC /* LaunchScreen.storyboard */,
+				B5F3C85E1E08D106004B98EC /* Info.plist */,
+			);
+			path = FakeDanTang;
+			sourceTree = "<group>";
+		};
+		B5F3C8691E08D689004B98EC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3C89A1E092650004B98EC /* Classify */,
+				B5F3C8941E09255F004B98EC /* Me */,
+				B5F3C88E1E0923B6004B98EC /* Product */,
+				B5F3C8741E08DF33004B98EC /* Main */,
+				B5F3C86A1E08D689004B98EC /* DanTang */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B5F3C86A1E08D689004B98EC /* DanTang */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3C86B1E08D689004B98EC /* Controller */,
+				B5F3C86C1E08D689004B98EC /* Model */,
+				B5F3C86D1E08D689004B98EC /* View */,
+			);
+			path = DanTang;
+			sourceTree = "<group>";
+		};
+		B5F3C86B1E08D689004B98EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3C8801E08FAC6004B98EC /* ALTopicViewController.swift */,
+				B5F3C8841E08FD0E004B98EC /* ALDanTangViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5F3C86C1E08D689004B98EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3C8861E08FDA0004B98EC /* ALChannel.swift */,
+				B5F3C8881E08FDAD004B98EC /* ALHomeItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5F3C86D1E08D689004B98EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3C86E1E08D6BA004B98EC /* ALHomeCell.xib */,
+				B5F3C8701E08D700004B98EC /* ALHomeCell.swift */,
+				B5F3C8721E08D923004B98EC /* ALTitlesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5F3C8741E08DF33004B98EC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3C8751E08DF33004B98EC /* Category */,
+				B5F3C8761E08DF33004B98EC /* Controller */,
+				B5F3C8771E08DF33004B98EC /* Tools */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B5F3C8751E08DF33004B98EC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3C8781E08DF6C004B98EC /* String+Extension.swift */,
+				B5F3C87E1E08F79A004B98EC /* UIView+Extension.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B5F3C8761E08DF33004B98EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3C87C1E08E56F004B98EC /* ALTabBarController.swift */,
+				B5F3C8821E08FAF8004B98EC /* ALBaseViewController.swift */,
+				B5F3C88C1E09213B004B98EC /* ALNavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5F3C8771E08DF33004B98EC /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3C87A1E08E1B1004B98EC /* ALConst.swift */,
+				B5F3C88A1E09056E004B98EC /* ALNetworkTool.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B5F3C88E1E0923B6004B98EC /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3C88F1E0923B6004B98EC /* Controller */,
+				B5F3C8901E0923B6004B98EC /* Model */,
+				B5F3C8911E0923B6004B98EC /* View */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		B5F3C88F1E0923B6004B98EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3C8921E0923D9004B98EC /* ALProductViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5F3C8901E0923B6004B98EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5F3C8911E0923B6004B98EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5F3C8941E09255F004B98EC /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3C8951E09255F004B98EC /* Controller */,
+				B5F3C8961E09255F004B98EC /* Model */,
+				B5F3C8971E09255F004B98EC /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		B5F3C8951E09255F004B98EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3C8981E092584004B98EC /* ALMeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5F3C8961E09255F004B98EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5F3C8971E09255F004B98EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5F3C89A1E092650004B98EC /* Classify */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3C89B1E092650004B98EC /* Controller */,
+				B5F3C89C1E092650004B98EC /* Model */,
+				B5F3C89D1E092650004B98EC /* View */,
+			);
+			path = Classify;
+			sourceTree = "<group>";
+		};
+		B5F3C89B1E092650004B98EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3C89E1E09266A004B98EC /* ALCategoryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5F3C89C1E092650004B98EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5F3C89D1E092650004B98EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CAA86C3BEAC2DF8DB30E5E08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FD7D57B1D9FADBF5702306C /* Pods-FakeDanTang.debug.xcconfig */,
+				4D4F2621BF536427E37E5348 /* Pods-FakeDanTang.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5F3C84E1E08D106004B98EC /* FakeDanTang */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5F3C8611E08D106004B98EC /* Build configuration list for PBXNativeTarget "FakeDanTang" */;
+			buildPhases = (
+				BD1F1F13AD655D147FD29F8D /* [CP] Check Pods Manifest.lock */,
+				B5F3C84B1E08D106004B98EC /* Sources */,
+				B5F3C84C1E08D106004B98EC /* Frameworks */,
+				B5F3C84D1E08D106004B98EC /* Resources */,
+				3BA5D24D55EFA5E3B334A109 /* [CP] Embed Pods Frameworks */,
+				6FDE474D98900EFB01150DFC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FakeDanTang;
+			productName = FakeDanTang;
+			productReference = B5F3C84F1E08D106004B98EC /* FakeDanTang.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5F3C8471E08D106004B98EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Allen Hsu";
+				TargetAttributes = {
+					B5F3C84E1E08D106004B98EC = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = B5F3C84A1E08D106004B98EC /* Build configuration list for PBXProject "FakeDanTang" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5F3C8461E08D106004B98EC;
+			productRefGroup = B5F3C8501E08D106004B98EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5F3C84E1E08D106004B98EC /* FakeDanTang */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5F3C84D1E08D106004B98EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F3C85D1E08D106004B98EC /* LaunchScreen.storyboard in Resources */,
+				B5F3C86F1E08D6BA004B98EC /* ALHomeCell.xib in Resources */,
+				B5F3C85A1E08D106004B98EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BA5D24D55EFA5E3B334A109 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FakeDanTang/Pods-FakeDanTang-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FDE474D98900EFB01150DFC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FakeDanTang/Pods-FakeDanTang-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD1F1F13AD655D147FD29F8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5F3C84B1E08D106004B98EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F3C8891E08FDAD004B98EC /* ALHomeItem.swift in Sources */,
+				B5F3C8871E08FDA0004B98EC /* ALChannel.swift in Sources */,
+				B5F3C87B1E08E1B1004B98EC /* ALConst.swift in Sources */,
+				B5F3C8551E08D106004B98EC /* ViewController.swift in Sources */,
+				B5F3C87F1E08F79A004B98EC /* UIView+Extension.swift in Sources */,
+				B5F3C8991E092584004B98EC /* ALMeViewController.swift in Sources */,
+				B5F3C8931E0923D9004B98EC /* ALProductViewController.swift in Sources */,
+				B5F3C89F1E09266A004B98EC /* ALCategoryViewController.swift in Sources */,
+				B5F3C8811E08FAC6004B98EC /* ALTopicViewController.swift in Sources */,
+				B5F3C8851E08FD0E004B98EC /* ALDanTangViewController.swift in Sources */,
+				B5F3C88B1E09056E004B98EC /* ALNetworkTool.swift in Sources */,
+				B5F3C8831E08FAF8004B98EC /* ALBaseViewController.swift in Sources */,
+				B5F3C87D1E08E56F004B98EC /* ALTabBarController.swift in Sources */,
+				B5F3C8531E08D106004B98EC /* AppDelegate.swift in Sources */,
+				B5F3C8711E08D700004B98EC /* ALHomeCell.swift in Sources */,
+				B5F3C8791E08DF6C004B98EC /* String+Extension.swift in Sources */,
+				B5F3C8731E08D923004B98EC /* ALTitlesView.swift in Sources */,
+				B5F3C88D1E09213B004B98EC /* ALNavigationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5F3C85B1E08D106004B98EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5F3C85C1E08D106004B98EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5F3C85F1E08D106004B98EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5F3C8601E08D106004B98EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5F3C8621E08D106004B98EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD7D57B1D9FADBF5702306C /* Pods-FakeDanTang.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FakeDanTang/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.allen.FakeDanTang;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B5F3C8631E08D106004B98EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D4F2621BF536427E37E5348 /* Pods-FakeDanTang.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FakeDanTang/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.allen.FakeDanTang;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5F3C84A1E08D106004B98EC /* Build configuration list for PBXProject "FakeDanTang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5F3C85F1E08D106004B98EC /* Debug */,
+				B5F3C8601E08D106004B98EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5F3C8611E08D106004B98EC /* Build configuration list for PBXNativeTarget "FakeDanTang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5F3C8621E08D106004B98EC /* Debug */,
+				B5F3C8631E08D106004B98EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5F3C8471E08D106004B98EC /* Project object */;
+}
