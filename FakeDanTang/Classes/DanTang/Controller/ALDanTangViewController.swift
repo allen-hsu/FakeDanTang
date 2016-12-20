@@ -10,29 +10,68 @@ import UIKit
 
 class ALDanTangViewController: ALBaseViewController, UIScrollViewDelegate {
 	
-	var items = [ALHomeItem]()
+	
 	var channels = [ALChannel]()
 	var contentView = UIScrollView()
+	var titlesView = UIView()
+	var indicatorView = UIView()
 	var selectedButton = UIButton()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		setupNav()
+		weak var weakSelf = self
+		
+		// 获取首页顶部选择数据
+		ALNetworkTool.shareNetworkTool.loadHomeTopData { (ym_channels) in
+			for channel in ym_channels {
+				let vc = ALTopicViewController()
+				vc.title = channel.name!
+				weakSelf!.addChildViewController(vc)
+			}
+			//设置顶部标签栏
+			weakSelf!.setupTitlesView()
+			// 底部的scrollview
+			weakSelf!.setupContentView()
+		}
 	}
 	
-	func setupChildViewControllers(){
+	func setupChildViewControllers() {
+		for channel in channels {
+			let vc = ALTopicViewController()
+			vc.title = channel.name
+			addChildViewController(vc)
+		}
 	}
 	
 	func setupTitlesView() {
-		view.addSubview(titlesView)
-		titlesView.addSubview(indicatorView)
+		// 顶部背景
+		let bgView = UIView()
 		
-		/// -------------- 布局 -------------
-		titlesView.snp.makeConstraints{ (make) in
-			make.left.equalTo(0)
-			make.top.equalTo(kTitlesViewY)
-			make.width.equalTo(SCREENW)
-			make.height.equalTo(kTitlesViewH)
-		}
+		bgView.frame = CGRect(x: 0, y: kTitlesViewY, width: SCREENW, height: kTitlesViewH)
+		view.addSubview(bgView)
+		// 标签
+		let titlesView = UIView()
+		titlesView.backgroundColor = ALGlobalColor()
+		titlesView.frame = CGRect(x: 0, y: 0, width: SCREENW - kTitlesViewH, height: kTitlesViewH)
+		bgView.addSubview(titlesView)
+		self.titlesView = titlesView
+		//底部红色指示器
+		let indicatorView = UIView()
+		indicatorView.backgroundColor = ALGlobalRedColor()
+		indicatorView.height = kIndicatorViewH
+		indicatorView.y = kTitlesViewH - kIndicatorViewH
+		indicatorView.tag = -1
+		self.indicatorView = indicatorView
+		
+		// 选择按钮
+		let arrowButton = UIButton()
+		
+		arrowButton.frame = CGRect(x: SCREENW - kTitlesViewH, y: 0, width: kTitlesViewH, height: kTitlesViewH)
+		arrowButton.setImage(UIImage(named: "arrow_index_down_8x4_"), for: .normal)
+		arrowButton.addTarget(self, action: #selector(arrowButtonClick(button:)), for: .touchUpInside)
+		arrowButton.backgroundColor = ALGlobalColor()
+		bgView.addSubview(arrowButton)
 		
 		//内部子标签
 		let count = childViewControllers.count
@@ -46,10 +85,11 @@ class ALDanTangViewController: ALBaseViewController, UIScrollViewDelegate {
 			button.x = CGFloat(index) * width
 			button.tag = index
 			let vc = childViewControllers[index]
-			button.setTitle(vc.title, for: .normal)
+			button.titleLabel!.font = UIFont.systemFont(ofSize: 14)
+			button.setTitle(vc.title!, for: .normal)
 			button.setTitleColor(UIColor.gray, for: .normal)
 			button.setTitleColor(ALGlobalRedColor(), for: .disabled)
-			button.addTarget(self, action: #selector(ALDanTangViewController.titlesClick(button:)), for: .touchUpInside)
+			button.addTarget(self, action: #selector(self.titlesClick(button:)), for: .touchUpInside)
 			titlesView.addSubview(button)
 			//默认点击了第一个按钮
 			if index == 0 {
@@ -57,8 +97,17 @@ class ALDanTangViewController: ALBaseViewController, UIScrollViewDelegate {
 				selectedButton = button
 				//让按钮内部的Label根据文字来计算内容
 				button.titleLabel?.sizeToFit()
+				indicatorView.width = button.titleLabel!.width
 				indicatorView.centerX = button.centerX
 			}
+		}
+		//底部红色指示器
+		titlesView.addSubview(indicatorView)
+	}
+	
+	func arrowButtonClick(button: UIButton) {
+		UIView.animate(withDuration: kAnimationDuration) {
+			button.imageView?.transform = button.imageView!.transform.rotated(by: CGFloat(M_PI))
 		}
 	}
 	
@@ -77,20 +126,6 @@ class ALDanTangViewController: ALBaseViewController, UIScrollViewDelegate {
 		contentView.setContentOffset(offset, animated: true)
 	}
 	
-	private lazy var titlesView: UIView = {
-		let titlesView = UIView()
-		titlesView.backgroundColor = ALColor(r: 1, g: 1, b: 1, a: 1)
-		return titlesView
-	}()
-	
-	private lazy var indicatorView: UIView = {
-		let indicatorView = UIView()
-		indicatorView.backgroundColor = ALGlobalRedColor()
-		indicatorView.height = kIndicatorViewH
-		indicatorView.y = kTitlesViewH - kIndicatorViewH
-		indicatorView.tag = -1
-		return indicatorView
-	}()
 	
 	func setupContentView() {
 
@@ -106,7 +141,6 @@ class ALDanTangViewController: ALBaseViewController, UIScrollViewDelegate {
 		scrollViewDidEndScrollingAnimation(scrollView: contentView)
 	}
 	
-	/// 设置导航栏
 	func setupNav() {
 		view.backgroundColor = UIColor.white
 		navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Feed_SearchBtn_18x18_"), style: .plain, target: self, action: #selector(dantangRightBBClick))

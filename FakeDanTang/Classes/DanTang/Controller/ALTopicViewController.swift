@@ -10,9 +10,16 @@ import UIKit
 
 class ALTopicViewController: ALBaseViewController {
 	
+	var items = [ALHomeItem]()
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
+		view.backgroundColor = ALGlobalColor()
+		// 获取首页数据
+		weak var weakSelf = self
+		ALNetworkTool.shareNetworkTool.loadHomeInfo(id: 4) { (homeItems) in
+			weakSelf!.items = homeItems
+		}
+
 		// Do any additional setup after loading the view.
 	}
 	
