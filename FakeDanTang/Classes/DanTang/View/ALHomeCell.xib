@@ -6,19 +6,63 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CVQ-95-MWw">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="homeCellID" selectionStyle="default" indentationWidth="10" id="CVQ-95-MWw" customClass="ALHomeCell" customModule="FakeDanTang" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CVQ-95-MWw" id="C3R-vH-lRL">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gaa-IB-hYl" userLabel="Bg Image View">
+                        <rect key="frame" x="8" y="8" width="304" height="144"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Au-oY-ZoI" userLabel="Placeholder Btn">
+                        <rect key="frame" x="145" y="67" width="31" height="26"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <state key="normal" title="Button" image="PlaceHolderImage_small_31x26_"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqR-jR-MEo" userLabel="Title Label">
+                        <rect key="frame" x="16" y="125" width="42" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyC-ao-nSB" userLabel="Favorite Btn">
+                        <rect key="frame" x="243" y="16" width="61" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="3000" image="Feed_FavoriteIcon_17x17_"/>
+                        <connections>
+                            <action selector="favoriteButtononClick:" destination="CVQ-95-MWw" eventType="touchUpInside" id="Yoh-dU-ukh"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7Au-oY-ZoI" firstAttribute="centerY" secondItem="C3R-vH-lRL" secondAttribute="centerY" id="8xd-9t-1aq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gaa-IB-hYl" secondAttribute="trailing" id="Os3-np-GXf"/>
+                    <constraint firstItem="gaa-IB-hYl" firstAttribute="leading" secondItem="C3R-vH-lRL" secondAttribute="leadingMargin" id="PFy-B2-idD"/>
+                    <constraint firstItem="gaa-IB-hYl" firstAttribute="top" secondItem="C3R-vH-lRL" secondAttribute="topMargin" id="RbA-wE-gH2"/>
+                    <constraint firstItem="7Au-oY-ZoI" firstAttribute="centerX" secondItem="C3R-vH-lRL" secondAttribute="centerX" id="hMk-Nn-83T"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gaa-IB-hYl" secondAttribute="bottom" id="poH-12-qIc"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="bgImageView" destination="gaa-IB-hYl" id="rKP-Ks-Cib"/>
+                <outlet property="favoriteBtn" destination="LyC-ao-nSB" id="dXb-bv-ZDv"/>
+                <outlet property="placeholderBtn" destination="7Au-oY-ZoI" id="Ugd-Jb-Yz9"/>
+                <outlet property="titleLabel" destination="YqR-jR-MEo" id="cO1-9Q-E1J"/>
+            </connections>
             <point key="canvasLocation" x="141" y="152"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="Feed_FavoriteIcon_17x17_" width="17" height="17"/>
+        <image name="PlaceHolderImage_small_31x26_" width="31" height="26"/>
+    </resources>
 </document>
