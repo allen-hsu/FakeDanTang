@@ -9,15 +9,11 @@
 import UIKit
 
 class ALLoginViewController: ALBaseViewController {
-	/// 手机号
-	@IBOutlet weak var mobileField: UITextField!
-	/// 密码
-	@IBOutlet weak var passwordField: UITextField!
-	/// 登录按钮
-	@IBOutlet weak var loginButton: UIButton!
-	/// 忘记密码按钮
-	@IBOutlet weak var forgetPwdBtn: UIButton!
 	
+	@IBOutlet weak var mobileField: UITextField!
+	@IBOutlet weak var passwordField: UITextField!
+	@IBOutlet weak var loginButton: UIButton!
+	@IBOutlet weak var forgetPwdBtn: UIButton!
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// 设置导航栏的左右按钮
@@ -42,9 +38,9 @@ class ALLoginViewController: ALBaseViewController {
 	}
 	/// 注册按钮点击
 	func regiisterButtonClick() {
-		//let registerVC = YMRegisterViewController()
-		//registerVC.title = "注册"
-		//navigationController?.pushViewController(registerVC, animated: true)
+		let registerVC = ALRegisterViewController()
+		registerVC.title = "注册"
+		navigationController?.pushViewController(registerVC, animated: true)
 	}
 	
 	/// - 其他社交账号登录

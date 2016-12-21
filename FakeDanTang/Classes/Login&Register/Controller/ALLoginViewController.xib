@@ -9,44 +9,50 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ALLoginViewController" customModule="FakeDanTang" customModuleProvider="target">
+            <connections>
+                <outlet property="forgetPwdBtn" destination="YbP-oJ-t6j" id="bVL-BZ-iCF"/>
+                <outlet property="loginButton" destination="2no-g0-UrS" id="T4X-bQ-uVw"/>
+                <outlet property="mobileField" destination="CH4-kM-q0U" id="CEU-hY-1Od"/>
+                <outlet property="passwordField" destination="iQv-cp-DDu" id="5NP-7f-rbl"/>
+                <outlet property="view" destination="eqN-mv-aFv" id="3Kr-oV-GWr"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="eqN-mv-aFv">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fon-zq-7mQ">
-                    <rect key="frame" x="146" y="405" width="70" height="70"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fon-zq-7mQ">
+                    <rect key="frame" x="145" y="362" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="5KM-E0-0SK"/>
+                        <constraint firstAttribute="width" constant="70" id="5fr-yz-VPm"/>
+                    </constraints>
                     <state key="normal" image="Share_WeiboIcon_70x70_"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kr5-ZB-Rk0">
-                    <rect key="frame" x="265" y="405" width="70" height="70"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kr5-ZB-Rk0">
+                    <rect key="frame" x="265" y="362" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="bkM-a2-Qxn"/>
+                        <constraint firstAttribute="height" constant="70" id="i1P-hf-tJB"/>
+                    </constraints>
                     <state key="normal" image="Share_WeChatSessionIcon_70x70_"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNV-0Y-p61">
-                    <rect key="frame" x="381" y="405" width="70" height="70"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="Share_QQIcon_70x70_"/>
-                </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CH4-kM-q0U" userLabel="Mobile Field">
-                    <rect key="frame" x="20" y="51" width="560" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CH4-kM-q0U" userLabel="Mobile Field">
+                    <rect key="frame" x="20" y="98" width="560" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iQv-cp-DDu" userLabel="Password Field">
-                    <rect key="frame" x="20" y="102" width="560" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iQv-cp-DDu" userLabel="Password Field">
+                    <rect key="frame" x="20" y="149" width="560" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2no-g0-UrS" userLabel="Login Button">
-                    <rect key="frame" x="20" y="216" width="560" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2no-g0-UrS" userLabel="Login Button">
+                    <rect key="frame" x="20" y="216" width="560" height="34"/>
                     <color key="backgroundColor" red="0.91080522537231445" green="0.33080923557281494" blue="0.3327365517616272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal" title="登陸"/>
                     <userDefinedRuntimeAttributes>
@@ -55,13 +61,41 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbP-oJ-t6j" userLabel="Forget Pwd Btn">
-                    <rect key="frame" x="526" y="268" width="62" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbP-oJ-t6j" userLabel="Forget Pwd Btn">
+                    <rect key="frame" x="526" y="272" width="62" height="30"/>
                     <state key="normal" title="忘記密碼"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNV-0Y-p61">
+                    <rect key="frame" x="385" y="362" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="5pT-tn-McN"/>
+                        <constraint firstAttribute="height" constant="70" id="OgR-Mv-M5F"/>
+                    </constraints>
+                    <state key="normal" image="Share_QQIcon_70x70_"/>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Kr5-ZB-Rk0" firstAttribute="leading" secondItem="fon-zq-7mQ" secondAttribute="trailing" constant="50" id="6W2-Wz-Bjn"/>
+                <constraint firstAttribute="trailing" secondItem="CH4-kM-q0U" secondAttribute="trailing" constant="20" id="A9J-hD-EBi"/>
+                <constraint firstAttribute="trailing" secondItem="2no-g0-UrS" secondAttribute="trailing" constant="20" id="FXd-LL-6tV"/>
+                <constraint firstItem="NNV-0Y-p61" firstAttribute="leading" secondItem="Kr5-ZB-Rk0" secondAttribute="trailing" constant="50" id="Hey-fQ-kmw"/>
+                <constraint firstItem="CH4-kM-q0U" firstAttribute="top" secondItem="eqN-mv-aFv" secondAttribute="top" constant="98" id="LI6-1C-l4k"/>
+                <constraint firstItem="NNV-0Y-p61" firstAttribute="top" secondItem="2no-g0-UrS" secondAttribute="bottom" constant="112" id="PGP-tc-gbg"/>
+                <constraint firstItem="CH4-kM-q0U" firstAttribute="leading" secondItem="eqN-mv-aFv" secondAttribute="leading" constant="20" id="TTj-5e-Tgt"/>
+                <constraint firstItem="Kr5-ZB-Rk0" firstAttribute="centerX" secondItem="eqN-mv-aFv" secondAttribute="centerX" id="Y7X-Mh-RfL"/>
+                <constraint firstItem="NNV-0Y-p61" firstAttribute="leading" secondItem="Kr5-ZB-Rk0" secondAttribute="trailing" constant="50" id="Yew-Dh-wKH"/>
+                <constraint firstItem="2no-g0-UrS" firstAttribute="leading" secondItem="eqN-mv-aFv" secondAttribute="leading" constant="20" id="asd-Xj-spk"/>
+                <constraint firstItem="Kr5-ZB-Rk0" firstAttribute="top" secondItem="2no-g0-UrS" secondAttribute="bottom" constant="112" id="bf8-zc-e4d"/>
+                <constraint firstItem="Kr5-ZB-Rk0" firstAttribute="leading" secondItem="fon-zq-7mQ" secondAttribute="trailing" constant="50" id="dcz-K1-p0X"/>
+                <constraint firstItem="2no-g0-UrS" firstAttribute="top" secondItem="iQv-cp-DDu" secondAttribute="bottom" constant="37" id="drz-bv-YdQ"/>
+                <constraint firstItem="fon-zq-7mQ" firstAttribute="top" secondItem="2no-g0-UrS" secondAttribute="bottom" constant="112" id="frD-Gq-xBG"/>
+                <constraint firstAttribute="trailing" secondItem="iQv-cp-DDu" secondAttribute="trailing" constant="20" id="lOM-cB-1ly"/>
+                <constraint firstAttribute="trailing" secondItem="YbP-oJ-t6j" secondAttribute="trailing" constant="12" id="mZd-LU-egE"/>
+                <constraint firstItem="YbP-oJ-t6j" firstAttribute="top" secondItem="2no-g0-UrS" secondAttribute="bottom" constant="22" id="t86-tc-wyQ"/>
+                <constraint firstItem="iQv-cp-DDu" firstAttribute="top" secondItem="CH4-kM-q0U" secondAttribute="bottom" constant="21" id="vLy-rL-G4S"/>
+                <constraint firstItem="iQv-cp-DDu" firstAttribute="leading" secondItem="eqN-mv-aFv" secondAttribute="leading" constant="20" id="yV8-t1-v7I"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-10" y="161"/>
         </view>

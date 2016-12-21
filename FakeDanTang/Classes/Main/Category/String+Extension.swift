@@ -24,16 +24,4 @@ public extension String {
 		let predicate = NSPredicate(format: "SELF MATCHES %@", patternString)
 		return predicate.evaluate(with: string)
 	}
-	
-	//to format price
-	static func stringWithFormatMoney(money: Double) -> String {
-		var moneyStr: String
-		if money < 10000 {
-			moneyStr = String(format: "%.2f", money)
-		} else {
-			let newMoney = money / 10000.0
-			moneyStr = String(format: "%.2f萬", newMoney)
-		}
-		return moneyStr
-	}
 }
