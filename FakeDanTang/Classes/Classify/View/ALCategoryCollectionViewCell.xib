@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="P1V-V6-hyc" customClass="ALCategoryCollectionViewCell" customModule="FakeDanTang" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wnr-5f-Rcw" userLabel="Collection Image View">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="75"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wnr-5f-Rcw" secondAttribute="trailing" id="8tP-pP-rB0"/>
+                <constraint firstItem="wnr-5f-Rcw" firstAttribute="leading" secondItem="P1V-V6-hyc" secondAttribute="leading" id="YOd-IH-HiE"/>
+                <constraint firstItem="wnr-5f-Rcw" firstAttribute="top" secondItem="P1V-V6-hyc" secondAttribute="top" id="mWW-5D-wpp"/>
+                <constraint firstAttribute="bottom" secondItem="wnr-5f-Rcw" secondAttribute="bottom" id="rsl-gS-LJo"/>
+            </constraints>
+            <connections>
+                <outlet property="collectionImageView" destination="wnr-5f-Rcw" id="r8H-k6-M1Z"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="90.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

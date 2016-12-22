@@ -13,7 +13,7 @@ class ALTopicViewController: ALBaseViewController, UITableViewDelegate, UITableV
 	
 
 	var type = Int()
-	var tableView = UITableView()
+	weak var tableView: UITableView?
 	var items = [ALHomeItem]()
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -23,14 +23,14 @@ class ALTopicViewController: ALBaseViewController, UITableViewDelegate, UITableV
 		weak var weakSelf = self
 		ALNetworkTool.shareNetworkTool.loadHomeInfo(id: 4) { (homeItems) in
 			weakSelf!.items = homeItems
-			weakSelf?.tableView.reloadData()
+			weakSelf!.tableView!.reloadData()
 		}
 
 		// Do any additional setup after loading the view.
 	}
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return items.count
+		return items.count ?? 0
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

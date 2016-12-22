@@ -34,6 +34,26 @@
 		B5F3C8AB1E0A062F004B98EC /* ALRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8AA1E0A062F004B98EC /* ALRegisterViewController.swift */; };
 		B5F3C8AD1E0A171C004B98EC /* ALDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8AC1E0A171C004B98EC /* ALDetailViewController.swift */; };
 		B5F3C8AF1E0A1738004B98EC /* ALGoodsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8AE1E0A1738004B98EC /* ALGoodsDetailViewController.swift */; };
+		B5F3C8B11E0A5726004B98EC /* ALProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8B01E0A5726004B98EC /* ALProduct.swift */; };
+		B5F3C8B31E0A5A28004B98EC /* ALProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8B21E0A5A28004B98EC /* ALProductDetailViewController.swift */; };
+		B5F3C8B51E0A5BF8004B98EC /* ALCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5F3C8B41E0A5BF8004B98EC /* ALCollectionViewCell.xib */; };
+		B5F3C8B71E0A77A3004B98EC /* ALCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8B61E0A77A3004B98EC /* ALCollectionViewCell.swift */; };
+		B5F3C8B91E0AB968004B98EC /* ALCategoryHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8B81E0AB968004B98EC /* ALCategoryHeaderViewController.swift */; };
+		B5F3C8BB1E0AB9A1004B98EC /* ALCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8BA1E0AB9A1004B98EC /* ALCollection.swift */; };
+		B5F3C8BD1E0AB9FB004B98EC /* ALGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8BC1E0AB9FB004B98EC /* ALGroup.swift */; };
+		B5F3C8BF1E0ABB0B004B98EC /* ALCategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8BE1E0ABB0B004B98EC /* ALCategoryHeaderView.swift */; };
+		B5F3C8C11E0ABC42004B98EC /* ALVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8C01E0ABC42004B98EC /* ALVerticalButton.swift */; };
+		B5F3C8C31E0ABEB1004B98EC /* ALCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8C21E0ABEB1004B98EC /* ALCategoryCollectionViewCell.swift */; };
+		B5F3C8C51E0ABEC8004B98EC /* ALTopHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8C41E0ABEC8004B98EC /* ALTopHeaderView.swift */; };
+		B5F3C8C71E0ABEE4004B98EC /* ALFristGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8C61E0ABEE4004B98EC /* ALFristGroupCell.swift */; };
+		B5F3C8C91E0ABEF7004B98EC /* ALSecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8C81E0ABEF7004B98EC /* ALSecondTableViewCell.swift */; };
+		B5F3C8CB1E0ABF36004B98EC /* ALFristCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8CA1E0ABF36004B98EC /* ALFristCollectionViewCell.swift */; };
+		B5F3C8CD1E0ABF5A004B98EC /* ALCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5F3C8CC1E0ABF5A004B98EC /* ALCategoryCollectionViewCell.xib */; };
+		B5F3C8CF1E0AC0A0004B98EC /* ALTopHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5F3C8CE1E0AC0A0004B98EC /* ALTopHeaderView.xib */; };
+		B5F3C8D11E0AC473004B98EC /* ALFirstCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5F3C8D01E0AC473004B98EC /* ALFirstCollectionViewCell.xib */; };
+		B5F3C8D31E0AC60E004B98EC /* ALFirstGroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5F3C8D21E0AC60E004B98EC /* ALFirstGroupCell.xib */; };
+		B5F3C8D51E0AC639004B98EC /* ALSecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5F3C8D41E0AC639004B98EC /* ALSecondTableViewCell.xib */; };
+		B5F3C8D71E0ACA86004B98EC /* ALSeeMoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3C8D61E0ACA86004B98EC /* ALSeeMoreController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +88,26 @@
 		B5F3C8AA1E0A062F004B98EC /* ALRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALRegisterViewController.swift; sourceTree = "<group>"; };
 		B5F3C8AC1E0A171C004B98EC /* ALDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALDetailViewController.swift; sourceTree = "<group>"; };
 		B5F3C8AE1E0A1738004B98EC /* ALGoodsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALGoodsDetailViewController.swift; sourceTree = "<group>"; };
+		B5F3C8B01E0A5726004B98EC /* ALProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALProduct.swift; sourceTree = "<group>"; };
+		B5F3C8B21E0A5A28004B98EC /* ALProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALProductDetailViewController.swift; sourceTree = "<group>"; };
+		B5F3C8B41E0A5BF8004B98EC /* ALCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALCollectionViewCell.xib; sourceTree = "<group>"; };
+		B5F3C8B61E0A77A3004B98EC /* ALCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALCollectionViewCell.swift; sourceTree = "<group>"; };
+		B5F3C8B81E0AB968004B98EC /* ALCategoryHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALCategoryHeaderViewController.swift; sourceTree = "<group>"; };
+		B5F3C8BA1E0AB9A1004B98EC /* ALCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALCollection.swift; sourceTree = "<group>"; };
+		B5F3C8BC1E0AB9FB004B98EC /* ALGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALGroup.swift; sourceTree = "<group>"; };
+		B5F3C8BE1E0ABB0B004B98EC /* ALCategoryHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALCategoryHeaderView.swift; sourceTree = "<group>"; };
+		B5F3C8C01E0ABC42004B98EC /* ALVerticalButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALVerticalButton.swift; sourceTree = "<group>"; };
+		B5F3C8C21E0ABEB1004B98EC /* ALCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		B5F3C8C41E0ABEC8004B98EC /* ALTopHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTopHeaderView.swift; sourceTree = "<group>"; };
+		B5F3C8C61E0ABEE4004B98EC /* ALFristGroupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALFristGroupCell.swift; sourceTree = "<group>"; };
+		B5F3C8C81E0ABEF7004B98EC /* ALSecondTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALSecondTableViewCell.swift; sourceTree = "<group>"; };
+		B5F3C8CA1E0ABF36004B98EC /* ALFristCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALFristCollectionViewCell.swift; sourceTree = "<group>"; };
+		B5F3C8CC1E0ABF5A004B98EC /* ALCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		B5F3C8CE1E0AC0A0004B98EC /* ALTopHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALTopHeaderView.xib; sourceTree = "<group>"; };
+		B5F3C8D01E0AC473004B98EC /* ALFirstCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALFirstCollectionViewCell.xib; sourceTree = "<group>"; };
+		B5F3C8D21E0AC60E004B98EC /* ALFirstGroupCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALFirstGroupCell.xib; sourceTree = "<group>"; };
+		B5F3C8D41E0AC639004B98EC /* ALSecondTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALSecondTableViewCell.xib; sourceTree = "<group>"; };
+		B5F3C8D61E0ACA86004B98EC /* ALSeeMoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALSeeMoreController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				B5F3C8921E0923D9004B98EC /* ALProductViewController.swift */,
+				B5F3C8B21E0A5A28004B98EC /* ALProductDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -232,6 +273,7 @@
 		B5F3C8901E0923B6004B98EC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B5F3C8B01E0A5726004B98EC /* ALProduct.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -239,6 +281,8 @@
 		B5F3C8911E0923B6004B98EC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B5F3C8B41E0A5BF8004B98EC /* ALCollectionViewCell.xib */,
+				B5F3C8B61E0A77A3004B98EC /* ALCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -289,6 +333,8 @@
 			isa = PBXGroup;
 			children = (
 				B5F3C89E1E09266A004B98EC /* ALCategoryViewController.swift */,
+				B5F3C8B81E0AB968004B98EC /* ALCategoryHeaderViewController.swift */,
+				B5F3C8D61E0ACA86004B98EC /* ALSeeMoreController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -296,6 +342,8 @@
 		B5F3C89C1E092650004B98EC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B5F3C8BA1E0AB9A1004B98EC /* ALCollection.swift */,
+				B5F3C8BC1E0AB9FB004B98EC /* ALGroup.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -303,6 +351,18 @@
 		B5F3C89D1E092650004B98EC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B5F3C8BE1E0ABB0B004B98EC /* ALCategoryHeaderView.swift */,
+				B5F3C8C01E0ABC42004B98EC /* ALVerticalButton.swift */,
+				B5F3C8C21E0ABEB1004B98EC /* ALCategoryCollectionViewCell.swift */,
+				B5F3C8CC1E0ABF5A004B98EC /* ALCategoryCollectionViewCell.xib */,
+				B5F3C8C41E0ABEC8004B98EC /* ALTopHeaderView.swift */,
+				B5F3C8CE1E0AC0A0004B98EC /* ALTopHeaderView.xib */,
+				B5F3C8C61E0ABEE4004B98EC /* ALFristGroupCell.swift */,
+				B5F3C8D21E0AC60E004B98EC /* ALFirstGroupCell.xib */,
+				B5F3C8C81E0ABEF7004B98EC /* ALSecondTableViewCell.swift */,
+				B5F3C8D41E0AC639004B98EC /* ALSecondTableViewCell.xib */,
+				B5F3C8CA1E0ABF36004B98EC /* ALFristCollectionViewCell.swift */,
+				B5F3C8D01E0AC473004B98EC /* ALFirstCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -413,9 +473,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F3C8CF1E0AC0A0004B98EC /* ALTopHeaderView.xib in Resources */,
 				B5F3C85D1E08D106004B98EC /* LaunchScreen.storyboard in Resources */,
+				B5F3C8B51E0A5BF8004B98EC /* ALCollectionViewCell.xib in Resources */,
 				B5F3C8A91E0A0523004B98EC /* ALRegisterViewController.xib in Resources */,
+				B5F3C8CD1E0ABF5A004B98EC /* ALCategoryCollectionViewCell.xib in Resources */,
 				B5F3C86F1E08D6BA004B98EC /* ALHomeCell.xib in Resources */,
+				B5F3C8D11E0AC473004B98EC /* ALFirstCollectionViewCell.xib in Resources */,
+				B5F3C8D31E0AC60E004B98EC /* ALFirstGroupCell.xib in Resources */,
+				B5F3C8D51E0AC639004B98EC /* ALSecondTableViewCell.xib in Resources */,
 				B5F3C85A1E08D106004B98EC /* Assets.xcassets in Resources */,
 				B5F3C8A71E096893004B98EC /* ALLoginViewController.xib in Resources */,
 			);
@@ -476,27 +542,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F3C8C51E0ABEC8004B98EC /* ALTopHeaderView.swift in Sources */,
+				B5F3C8BF1E0ABB0B004B98EC /* ALCategoryHeaderView.swift in Sources */,
+				B5F3C8CB1E0ABF36004B98EC /* ALFristCollectionViewCell.swift in Sources */,
 				B5F3C8891E08FDAD004B98EC /* ALHomeItem.swift in Sources */,
 				B5F3C8871E08FDA0004B98EC /* ALChannel.swift in Sources */,
+				B5F3C8BB1E0AB9A1004B98EC /* ALCollection.swift in Sources */,
 				B5F3C8AD1E0A171C004B98EC /* ALDetailViewController.swift in Sources */,
+				B5F3C8C31E0ABEB1004B98EC /* ALCategoryCollectionViewCell.swift in Sources */,
 				B5F3C8AF1E0A1738004B98EC /* ALGoodsDetailViewController.swift in Sources */,
 				B5F3C87B1E08E1B1004B98EC /* ALConst.swift in Sources */,
 				B5F3C8551E08D106004B98EC /* ViewController.swift in Sources */,
 				B5F3C8AB1E0A062F004B98EC /* ALRegisterViewController.swift in Sources */,
+				B5F3C8D71E0ACA86004B98EC /* ALSeeMoreController.swift in Sources */,
 				B5F3C87F1E08F79A004B98EC /* UIView+Extension.swift in Sources */,
 				B5F3C8991E092584004B98EC /* ALMeViewController.swift in Sources */,
 				B5F3C8931E0923D9004B98EC /* ALProductViewController.swift in Sources */,
+				B5F3C8B31E0A5A28004B98EC /* ALProductDetailViewController.swift in Sources */,
 				B5F3C89F1E09266A004B98EC /* ALCategoryViewController.swift in Sources */,
 				B5F3C8811E08FAC6004B98EC /* ALTopicViewController.swift in Sources */,
 				B5F3C8851E08FD0E004B98EC /* ALDanTangViewController.swift in Sources */,
 				B5F3C88B1E09056E004B98EC /* ALNetworkTool.swift in Sources */,
+				B5F3C8C71E0ABEE4004B98EC /* ALFristGroupCell.swift in Sources */,
 				B5F3C8831E08FAF8004B98EC /* ALBaseViewController.swift in Sources */,
+				B5F3C8C11E0ABC42004B98EC /* ALVerticalButton.swift in Sources */,
+				B5F3C8C91E0ABEF7004B98EC /* ALSecondTableViewCell.swift in Sources */,
 				B5F3C87D1E08E56F004B98EC /* ALTabBarController.swift in Sources */,
+				B5F3C8BD1E0AB9FB004B98EC /* ALGroup.swift in Sources */,
+				B5F3C8B71E0A77A3004B98EC /* ALCollectionViewCell.swift in Sources */,
 				B5F3C8A51E096841004B98EC /* ALLoginViewController.swift in Sources */,
 				B5F3C8531E08D106004B98EC /* AppDelegate.swift in Sources */,
 				B5F3C8711E08D700004B98EC /* ALHomeCell.swift in Sources */,
 				B5F3C8791E08DF6C004B98EC /* String+Extension.swift in Sources */,
+				B5F3C8B91E0AB968004B98EC /* ALCategoryHeaderViewController.swift in Sources */,
 				B5F3C88D1E09213B004B98EC /* ALNavigationController.swift in Sources */,
+				B5F3C8B11E0A5726004B98EC /* ALProduct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

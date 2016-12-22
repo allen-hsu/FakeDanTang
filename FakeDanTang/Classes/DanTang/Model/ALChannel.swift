@@ -8,8 +8,6 @@
 
 import Foundation
 
-import UIKit
-
 class ALChannel: NSObject {
 	var editable: Bool?
 	var id: Int?

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ALCollectionViewCell" id="UrS-OA-8bD" customClass="ALCollectionViewCell" customModule="FakeDanTang" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="139" height="245"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="139" height="245"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5wC-rU-t4R" userLabel="Product Image View">
+                        <rect key="frame" x="0.0" y="0.0" width="139" height="170"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="170" id="XED-EC-wYh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5U-WA-oXn" userLabel="Title Label">
+                        <rect key="frame" x="8" y="180" width="123" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1E-Tl-0tx" userLabel="Price Label">
+                        <rect key="frame" x="8" y="216" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oR8-BV-RA6" userLabel="Placeholder Btn">
+                        <rect key="frame" x="46" y="69" width="46" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Button"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRK-Fw-H0i" userLabel="Like Button">
+                        <rect key="frame" x="94" y="215" width="45" height="22"/>
+                        <state key="normal" title="0" image="Search_GiftBtn_Default_12x10_"/>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="D1E-Tl-0tx" secondAttribute="bottom" constant="8" id="5I4-oz-OF4"/>
+                <constraint firstItem="T5U-WA-oXn" firstAttribute="top" secondItem="5wC-rU-t4R" secondAttribute="bottom" constant="10" id="5Kt-g5-tyo"/>
+                <constraint firstItem="5wC-rU-t4R" firstAttribute="top" secondItem="UrS-OA-8bD" secondAttribute="top" id="Hck-Yx-AQb"/>
+                <constraint firstAttribute="trailing" secondItem="5wC-rU-t4R" secondAttribute="trailing" id="Pfe-nX-gwt"/>
+                <constraint firstAttribute="trailing" secondItem="YRK-Fw-H0i" secondAttribute="trailing" id="d28-kp-8Jx"/>
+                <constraint firstAttribute="bottom" secondItem="YRK-Fw-H0i" secondAttribute="bottom" constant="8" id="fWq-cc-IBR"/>
+                <constraint firstItem="T5U-WA-oXn" firstAttribute="leading" secondItem="UrS-OA-8bD" secondAttribute="leading" constant="8" id="gjY-vt-hYI"/>
+                <constraint firstItem="D1E-Tl-0tx" firstAttribute="leading" secondItem="UrS-OA-8bD" secondAttribute="leading" constant="8" id="hOg-81-IEw"/>
+                <constraint firstAttribute="trailing" secondItem="YRK-Fw-H0i" secondAttribute="trailing" id="kQj-E6-ogx"/>
+                <constraint firstAttribute="trailing" secondItem="T5U-WA-oXn" secondAttribute="trailing" constant="8" id="u4M-ep-ROg"/>
+                <constraint firstItem="5wC-rU-t4R" firstAttribute="leading" secondItem="UrS-OA-8bD" secondAttribute="leading" id="z3i-N9-zXM"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="likeButton" destination="YRK-Fw-H0i" id="IPp-Wy-Jge"/>
+                <outlet property="placeholderBtn" destination="oR8-BV-RA6" id="THX-5T-FoX"/>
+                <outlet property="priceLabel" destination="D1E-Tl-0tx" id="gZV-vp-E0i"/>
+                <outlet property="productImageView" destination="5wC-rU-t4R" id="r9c-rm-sJ0"/>
+                <outlet property="titleLabel" destination="T5U-WA-oXn" id="eJA-hc-5Ec"/>
+            </connections>
+            <point key="canvasLocation" x="-45.5" y="-39.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Search_GiftBtn_Default_12x10_" width="12" height="10"/>
+    </resources>
+</document>

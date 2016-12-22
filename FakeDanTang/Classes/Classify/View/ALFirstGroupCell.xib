@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryGroupFirstID" id="uNv-y2-IDY" userLabel="categoryGroupFirstID" customClass="ALFirstGroupCell" customModule="FakeDanTang" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uNv-y2-IDY" id="eAj-Lq-v3b">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ijs-v4-sDM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 風格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPd-TH-fRp">
+                                <rect key="frame" x="8" y="8" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="OPd-TH-fRp" secondAttribute="bottom" constant="6" id="0Mk-Vn-XC5"/>
+                            <constraint firstItem="OPd-TH-fRp" firstAttribute="top" secondItem="ijs-v4-sDM" secondAttribute="top" constant="8" id="LoK-Qr-5t4"/>
+                            <constraint firstItem="OPd-TH-fRp" firstAttribute="leading" secondItem="ijs-v4-sDM" secondAttribute="leading" constant="8" id="Pw8-Vq-pRb"/>
+                            <constraint firstAttribute="height" constant="35" id="gGg-CO-VZW"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zIZ-J8-hwl">
+                        <rect key="frame" x="0.0" y="35" width="320" height="115"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWB-sM-Nye" userLabel="First Button">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="tFy-cl-DqW"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYy-v9-XLq" userLabel="Second Button">
+                                <rect key="frame" x="80" y="0.0" width="80" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="VVK-00-gDf"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULy-KT-eXg" userLabel="Third Button">
+                                <rect key="frame" x="160" y="0.0" width="80" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Sjv-6M-N62"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKQ-Pd-bdG" userLabel="Forth Button">
+                                <rect key="frame" x="240" y="0.0" width="80" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="jt9-Yb-L65"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GWB-sM-Nye" firstAttribute="top" secondItem="zIZ-J8-hwl" secondAttribute="top" id="14t-HG-h1Z"/>
+                            <constraint firstItem="FYy-v9-XLq" firstAttribute="leading" secondItem="GWB-sM-Nye" secondAttribute="trailing" id="2BT-lT-uCn"/>
+                            <constraint firstItem="ULy-KT-eXg" firstAttribute="leading" secondItem="FYy-v9-XLq" secondAttribute="trailing" id="5ZG-b4-x1C"/>
+                            <constraint firstAttribute="bottom" secondItem="WKQ-Pd-bdG" secondAttribute="bottom" id="7ks-QX-KBm"/>
+                            <constraint firstItem="WKQ-Pd-bdG" firstAttribute="leading" secondItem="ULy-KT-eXg" secondAttribute="trailing" id="A5t-e7-9jU"/>
+                            <constraint firstItem="FYy-v9-XLq" firstAttribute="leading" secondItem="GWB-sM-Nye" secondAttribute="trailing" id="FIL-Ny-39Q"/>
+                            <constraint firstAttribute="trailing" secondItem="WKQ-Pd-bdG" secondAttribute="trailing" id="Ki6-WA-dHN"/>
+                            <constraint firstAttribute="bottom" secondItem="ULy-KT-eXg" secondAttribute="bottom" id="UPS-uL-mVp"/>
+                            <constraint firstItem="WKQ-Pd-bdG" firstAttribute="top" secondItem="zIZ-J8-hwl" secondAttribute="top" id="VdD-JS-wHh"/>
+                            <constraint firstItem="ULy-KT-eXg" firstAttribute="leading" secondItem="FYy-v9-XLq" secondAttribute="trailing" id="cXc-Iq-frT"/>
+                            <constraint firstAttribute="bottom" secondItem="GWB-sM-Nye" secondAttribute="bottom" id="dJM-92-Cf1"/>
+                            <constraint firstAttribute="bottom" secondItem="FYy-v9-XLq" secondAttribute="bottom" id="eRB-Bd-AE5"/>
+                            <constraint firstItem="ULy-KT-eXg" firstAttribute="top" secondItem="zIZ-J8-hwl" secondAttribute="top" id="hMx-aV-9ed"/>
+                            <constraint firstItem="WKQ-Pd-bdG" firstAttribute="leading" secondItem="ULy-KT-eXg" secondAttribute="trailing" id="ofI-hK-WAI"/>
+                            <constraint firstItem="FYy-v9-XLq" firstAttribute="top" secondItem="zIZ-J8-hwl" secondAttribute="top" id="q1u-CB-Y6u"/>
+                            <constraint firstItem="GWB-sM-Nye" firstAttribute="leading" secondItem="zIZ-J8-hwl" secondAttribute="leading" id="zrv-fh-EF4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ijs-v4-sDM" secondAttribute="bottom" constant="114" id="8FT-mu-tBB"/>
+                    <constraint firstAttribute="bottom" secondItem="zIZ-J8-hwl" secondAttribute="bottom" constant="-1" id="GNp-nW-bAE"/>
+                    <constraint firstAttribute="trailing" secondItem="ijs-v4-sDM" secondAttribute="trailing" id="QHk-Yg-i6X"/>
+                    <constraint firstAttribute="trailing" secondItem="zIZ-J8-hwl" secondAttribute="trailing" id="Y7Q-D6-SuN"/>
+                    <constraint firstItem="ijs-v4-sDM" firstAttribute="top" secondItem="eAj-Lq-v3b" secondAttribute="top" id="dge-zw-niR"/>
+                    <constraint firstItem="zIZ-J8-hwl" firstAttribute="leading" secondItem="eAj-Lq-v3b" secondAttribute="leading" id="f3N-c5-tcQ"/>
+                    <constraint firstItem="zIZ-J8-hwl" firstAttribute="top" secondItem="ijs-v4-sDM" secondAttribute="bottom" id="p8w-BF-ncg"/>
+                    <constraint firstItem="ijs-v4-sDM" firstAttribute="leading" secondItem="eAj-Lq-v3b" secondAttribute="leading" id="qcS-Bs-P6i"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="firstButton" destination="GWB-sM-Nye" id="KGJ-M4-DMa"/>
+                <outlet property="forthButton" destination="WKQ-Pd-bdG" id="rFD-W0-6Wo"/>
+                <outlet property="secondButton" destination="FYy-v9-XLq" id="EbO-YU-pxp"/>
+                <outlet property="thirdButton" destination="ULy-KT-eXg" id="9bi-Ww-5Gy"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

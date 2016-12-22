@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Bnb-Ei-GXq" userLabel="First Collection View Cell" customClass="ALFirstCollectionViewCell" customModule="FakeDanTang" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x5m-cd-78r" userLabel="Style Image View">
+                        <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="x5m-cd-78r" firstAttribute="top" secondItem="Bnb-Ei-GXq" secondAttribute="top" id="9rh-r5-k9I"/>
+                <constraint firstItem="x5m-cd-78r" firstAttribute="leading" secondItem="Bnb-Ei-GXq" secondAttribute="leading" id="GWX-cm-1mD"/>
+                <constraint firstAttribute="bottom" secondItem="x5m-cd-78r" secondAttribute="bottom" id="K01-uW-5ZI"/>
+                <constraint firstAttribute="trailing" secondItem="x5m-cd-78r" secondAttribute="trailing" id="LiW-5p-QRJ"/>
+            </constraints>
+            <connections>
+                <outlet property="styleImageView" destination="x5m-cd-78r" id="KHa-Xz-RuY"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

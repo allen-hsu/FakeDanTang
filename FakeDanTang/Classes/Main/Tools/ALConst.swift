@@ -52,6 +52,12 @@ let kTitlesViewH: CGFloat = 35
 
 let kTitlesViewY: CGFloat = 64
 
+/// 分类界面 顶部 item 的高
+let kitemH: CGFloat = 75
+/// 分类界面 顶部 item 的宽
+let kitemW: CGFloat = 150
+
+
 let kAnimationDuration = 0.25
 
 let SCREENW = UIScreen.main.bounds.size.width
@@ -65,7 +71,7 @@ func ALColor(r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
 
 
 func ALGlobalColor() -> UIColor {
-	return ALColor(r: 245, g: 245, b: 245, a: 1)
+	return ALColor(r: 240, g: 240, b: 240, a: 1)
 }
 
 

@@ -12,10 +12,10 @@ class ALDanTangViewController: ALBaseViewController, UIScrollViewDelegate {
 	
 	
 	var channels = [ALChannel]()
-	var contentView = UIScrollView()
-	var titlesView = UIView()
-	var indicatorView = UIView()
-	var selectedButton = UIButton()
+	weak var contentView = UIScrollView()
+	weak var titlesView = UIView()
+	weak var indicatorView = UIView()
+	weak var selectedButton = UIButton()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -112,18 +112,18 @@ class ALDanTangViewController: ALBaseViewController, UIScrollViewDelegate {
 	}
 	
 	func titlesClick(button: UIButton) {
-		selectedButton.isEnabled = true
+		selectedButton?.isEnabled = true
 		button.isEnabled = false
 		selectedButton = button
 	
 		UIView.animate(withDuration: kAnimationDuration) {
-			self.indicatorView.width = self.selectedButton.titleLabel!.width
-			self.indicatorView.centerX = self.selectedButton.centerX
+			self.indicatorView?.width = (self.selectedButton?.titleLabel!.width)!
+			self.indicatorView?.centerX = (self.selectedButton?.centerX)!
 		}
 
-		var offset = contentView.contentOffset
-		offset.x = CGFloat(button.tag) * contentView.width
-		contentView.setContentOffset(offset, animated: true)
+		var offset = contentView?.contentOffset
+		offset?.x = CGFloat(button.tag) * (contentView?.width)!
+		contentView?.setContentOffset(offset!, animated: true)
 	}
 	
 	
@@ -138,7 +138,7 @@ class ALDanTangViewController: ALBaseViewController, UIScrollViewDelegate {
 		contentView.isPagingEnabled = true
 		view.insertSubview(contentView, at: 0)
 		self.contentView = contentView
-		scrollViewDidEndScrollingAnimation(scrollView: contentView)
+		scrollViewDidEndScrollingAnimation(contentView)
 	}
 	
 	func setupNav() {
@@ -155,7 +155,7 @@ class ALDanTangViewController: ALBaseViewController, UIScrollViewDelegate {
 	}
 	
 	// MARK: - UIScrollViewDelegate
-	func scrollViewDidEndScrollingAnimation(scrollView: UIScrollView) {
+	func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
 		// 添加子控制器的 view
 		// 当前索引
 		let index = Int(scrollView.contentOffset.x / scrollView.width)
@@ -168,8 +168,8 @@ class ALDanTangViewController: ALBaseViewController, UIScrollViewDelegate {
 		scrollView.addSubview(vc.view)
 	}
 	
-	func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-		scrollViewDidEndScrollingAnimation(scrollView: scrollView)
+	func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+		scrollViewDidEndScrollingAnimation(scrollView)
 		// 当前索引
 		let index = Int(scrollView.contentOffset.x / scrollView.width)
 		// 点击 Button
